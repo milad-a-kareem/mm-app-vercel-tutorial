@@ -11,7 +11,7 @@ const initialState = {
 };
 
 export const addCost = createAsyncThunk("costs/addCost", async (costData) => {
-  const response = await fetch(`https://nextjs-money-manager-ssr-db.vercel.app/api/costs`, {
+  const response = await fetch(`https://mm-app-vercel-tutorial.vercel.app/api/costs`, {
     method: "POST",
     body: JSON.stringify(costData),
   });
